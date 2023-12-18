@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+        body{
+          width:100%;
+          height:100vh;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        form{
+        justify-content: center;
+        align-items: normal;
+        background-color: white;
+        padding: 25px;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        border:black;
+        outline:groove;
+      
+        }
+        label{
+        margin-top: 5px;
+        margin-bottom: 5px;  
+        border-width: 0;
+        font-weight:bold;
+        text-align:start;
+        }
+
+        input[type="submit"]{
+        width:89%;
+        margin:8px auto;
+        background-color: #151ac0;
+        color: #fff;
+        font-size: 14px;
+        padding: 4px 8px;       
+        display: block;
+        cursor: pointer;
+        border-color: blue;
+        
+      
+        }
+        input[type="text"],input[type="email"],input[type="password"] {
+        width: 100%;
+        }
+  </style>
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Register</h1>
+        <h5 style="font-weight: lighter">Kindly fill in this form to register</h5>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter username" />
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter email" />
+        <label for="password">Password</label>
+        <input type="password" name="pwd" placeholder="Your password" />
+        <label for="password">Repeat Password</label>
+        <input type="password" name="password" placeholder="Repeat password" />
+        <input type="submit" value="Register" />
+        <p style="font-weight: lighter">Already have an account? <a href="google.com">Log in</a></p>
+      </form>
+    </div>
+  </body>
+</html>
